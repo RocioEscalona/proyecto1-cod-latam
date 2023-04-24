@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   background-color: hsl(240, 4%, 95%);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,21 +17,36 @@ main {
   margin: auto;
   max-width: none;
 }
-
+/* estilos header*/
 .presentacion {
   background-color: #fbfbfb;
   display: flex;
   flex-direction: row;
   justify-content: end;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 10px 10px 5px 10px #dedede;
   margin: 30px;
 }
+.eidos {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: left;
+  color: #b05a7a;
+  text-shadow: 5px 5px 5px #c6536c;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* estilos imagenes */
 .dropdown {
   position: relative;
   display: inline-block;
   border-radius: 40px;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -43,15 +59,17 @@ main {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .desc {
   padding: 15px;
   text-align: center;
 }
+
 h1 {
   font-size: 36px;
   text-align: center;
-  color: #a61c3c;
-  text-shadow: 2px 2px #c0dbea;
+  color: rgb(247, 99, 131);
+  text-shadow: 5px 5px 5px #f78ea5;
 }
 .articulo {
   background-color: rgba(175, 89, 158, 0.3);
@@ -62,26 +80,18 @@ h1 {
   color: #0f0f0f;
 }
 
-h2 {
-  font-size: 28px;
-}
-.eidos {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-  text-align: left;
-  color: #b05a7a;
-}
-
 .parrafo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 p {
   text-align: center;
 }
+
+/* estilos menu na-listas*/
 #menu-nav {
   list-style: none;
   margin: 0;
@@ -89,9 +99,11 @@ p {
   width: 200px;
   background-color: #f67e7d;
 }
+
 nav li {
   padding: 8px 10px;
 }
+
 nav a {
   display: block;
   color: black;
@@ -107,6 +119,7 @@ nav a:active {
   color: #030202;
 }
 
+/* estilos boton descargar*/
 button {
   background-color: #af599e;
   color: #fbfbfb;
@@ -118,16 +131,19 @@ button {
   padding: 10px 20px;
   text-align: center;
 }
+
 button:hover {
   background-color: #c772df;
   color: #044e67;
   font-family: cursive;
   transform: scale(1.2);
 }
+
 button:active {
   color: #030202;
 }
 
+/* estilos iconos*/
 .icons {
   display: flex;
   justify-content: space-between;
@@ -135,6 +151,7 @@ button:active {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .iconos i {
   font-size: 3rem;
   margin-top: 1rem;
@@ -142,6 +159,7 @@ button:active {
   line-height: 1;
 }
 
+/* estilos hoja de contacto*/
 form label {
   display: inline-block;
   padding: 12px 12px 12px 0;
@@ -155,6 +173,7 @@ textarea {
   border-radius: 4px;
   resize: none;
 }
+
 input[type="submit"] {
   background-color: hsl(322, 76%, 49%);
   color: white;
@@ -170,6 +189,8 @@ input[type="submit"]:hover {
   background-color: #f9f9f9;
   color: #3edacf;
 }
+
+/* estilos footer*/
 footer {
   background-color: #af599e;
   margin-block-end: auto;
@@ -179,7 +200,7 @@ footer {
 }
 
 /* estilos responsive*/
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   header {
     padding: 5px;
   }
